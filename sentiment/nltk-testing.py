@@ -26,7 +26,7 @@ def create_lex(pos,neg):
     word_counts = Counter(lex)
 
 
-    for word in word_counts
+    for word in word_counts:
         if 1000 > word_counts[word] > 10:
             final_lex.append(word)
 
