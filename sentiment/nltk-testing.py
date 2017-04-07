@@ -73,6 +73,7 @@ def create_feature_sets_and_labels(pos,neg,test_size=.1):
 
 
 if __name__ == '__main__':
+    print("initializing")
     train_x, train_y, test_x, test_y = create_feature_sets_and_labels("positive_data.txt","negitive_data.txt")
-    with open("senti.pickle","w") as f:
+    with open("senti.pickle","wb") as f:
         pickle.dump([train_x, train_y, test_x, test_y],f)
