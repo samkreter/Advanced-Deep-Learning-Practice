@@ -61,7 +61,7 @@ def create_feature_sets_and_labels(pos,neg,test_size=.1):
     random.shuffle(features)
 
     features = np.array(features)
-    testing_size = test_size * len(features)
+    testing_size = int(test_size * len(features))
 
     train_x = list(features[:,0][:-testing_size])
     train_y = list(features[:,1][:-testing_size])
